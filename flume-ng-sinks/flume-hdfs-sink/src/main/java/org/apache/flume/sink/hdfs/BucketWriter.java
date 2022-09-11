@@ -241,7 +241,6 @@ class BucketWriter {
 
         bucketPath = filePath + "/" + inUsePrefix
           + fullFileName + inUseSuffix;
-        targetPath = filePath + "/" + fullFileName;
 
         LOG.info("Creating " + bucketPath);
         callWithTimeout(new CallRunner<Void>() {
